@@ -26,6 +26,24 @@ Fonts:
 Headings - font-family: 'Roboto', sans-serif;
 Text - font-family: 'Montserrat', sans-serif;
 
+Headings:
+	Desktop:
+		H1 - 2.2rem
+		H2 - 
+		H3 - 
+		H4 - 
+		H5 - 1.6rem
+		H6 - 
+		P - 
+	Mobile:
+		H1 - 0.8rem
+		H2 - 
+		H3 - 
+		H4 - 
+		H5 - 
+		H6 - 
+		P - 1.2rem
+
 */
 
 /* *************************************** HERO *************************************** */
@@ -163,33 +181,95 @@ footer {
 	color: #f8f8f8;
 }
 
-footer hr {
-	width: 50px;
-}
-
-footer figure img {
-	width: 100%
-}
-
-footer figure {
-	width: 80%;
-	max-width: 300px;
-}
-
-.social-icons img {
-	max-width: 25px;
-	filter: invert(100%) sepia(16%) saturate(93%) hue-rotate(235deg) brightness(118%) contrast(95%);
+.footer-content {
+	padding: 25px 0;
 }
 
 footer section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 25px 0;
 }
 
-hr {
-	width: 100px;
-	border: 1px solid #f8f8f8;
+.footer-info {
+	text-align: center;
+}
+
+.footer-info img {
+	width: 100%
+}
+
+.footer-info figure {
+	width: 80%;
+	max-width: 300px;
+	margin-bottom: 30px;
+}
+
+.footer-info p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+}
+
+.social-icons {
+	margin-top: 30px;
+}
+
+.social-icons img {
+	max-width: 30px;
+	filter: invert(100%) sepia(16%) saturate(93%) hue-rotate(235deg) brightness(118%) contrast(95%);
+	padding: 0 8px;
+}
+
+footer hr {
+	border: .5px solid #f8f8f8;
+}
+
+.footer-menu nav {
+	margin: 25px 0;
+}
+
+.footer-menu a {
+	text-decoration: none;
+	color: #f8f8f8;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.footer-menu ul li {
+	list-style-type: none;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.donate-footer-button {
+	padding: 15px 0;
+	background-color: #FF414B;
+}
+
+.footer-form h5 {
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-form input {
+	background: rgba(0, 0, 0, 0);
+	border-bottom: 1px solid #f8f8f8;
+	color: #f8f8f8;
+	font-size: 1.2rem;
+	margin: 10px 0;
+}
+
+.footer-form button {
+	color: #FF414B;
+	background-color: #f8f8f8;
+	margin-top: 20px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	padding: 8px 10px;
 }
 
 /* ******************************************* FOOTER ******************************************* */
