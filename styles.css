@@ -7,3 +7,143 @@
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
     display:block;
 }
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #262E29;
+}
+
+/*
+
+Colors:
+White - #f8f8f8
+Black - #262E29
+Dark Green - #4AAA48
+Light Green - #8DC641
+Red - #FF414B
+
+Fonts:
+Headings - font-family: 'Roboto', sans-serif;
+Text - font-family: 'Montserrat', sans-serif;
+
+*/
+
+/* *************************************** HERO *************************************** */
+
+.hero {
+	width: 100%;
+	height: 100vh;
+}
+
+.hero-home {
+	background-image: url('images/home-hero.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-heading {
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2.2rem;
+	display: none;
+}
+
+/* *************************************** HERO *************************************** */
+
+
+/* *************************************** HEADER *************************************** */
+
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header figure img {
+	width: 100%;
+}
+
+header figure {
+	max-width: 300px;
+}
+
+header nav ul li {
+	display: inline;
+	margin: 0 25px;
+}
+
+.header-content {
+	/*padding: 25px 35px;*/
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+.donate-header-button {
+	padding: 15px 18px;
+	margin-right: 0;
+	background-color: #8DC641;
+}
+
+/* *************************************** HEADER *************************************** */
+
+
+/* *************************************** NAV *************************************** */
+
+.desktop-nav {
+	display: none;
+}
+
+/* ***************************** MOBILE ***************************** */
+
+.mobile-nav {
+	width: 100%;
+}
+
+.mobile-nav #links {
+	display: none;
+	background-color: #262E29;
+}
+  
+.mobile-nav a {
+	color: #f8f8f8;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+}
+
+#links a:hover {
+	background-color: #f8f8f8;
+	color: #262E29;
+}
+
+.mobile-logo img {
+	width: 100%;
+}
+
+.mobile-logo {
+	width: 70%;
+}
+
+.mobile-nav a.icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* ***************************** MOBILE ***************************** */
+/* *************************************** NAV *************************************** */
+
+@media (min-width: 1000px) {
+	.mobile-nav {
+		display: none;
+	}
+}
