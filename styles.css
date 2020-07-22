@@ -60,9 +60,6 @@ Text - font-family: 'Montserrat', sans-serif;
 
 header {
 	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 header figure img {
@@ -79,16 +76,9 @@ header nav ul li {
 }
 
 .header-content {
-	/*padding: 25px 35px;*/
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 1.6rem;
-}
-
-.donate-header-button {
-	padding: 15px 18px;
-	margin-right: 0;
-	background-color: #8DC641;
 }
 
 /* *************************************** HEADER *************************************** */
@@ -98,6 +88,27 @@ header nav ul li {
 
 .desktop-nav {
 	display: none;
+}
+
+.desktop-nav a {
+	color: #262E29;
+	text-decoration: none;
+}
+
+.regular-links a:hover {
+	color: #f8f8f8;
+	transition: all .2s;
+}
+
+.donate-header-button {
+	padding: 15px 18px;
+	margin-right: 0;
+	background-color: #8DC641;
+}
+
+.donate-header-button:hover {
+	background-color: #f8f8f8;
+	transition: all .2s;
 }
 
 /* ***************************** MOBILE ***************************** */
@@ -122,6 +133,7 @@ header nav ul li {
 #links a:hover {
 	background-color: #f8f8f8;
 	color: #262E29;
+	transition: all .2s;
 }
 
 .mobile-logo img {
@@ -143,7 +155,23 @@ header nav ul li {
 /* *************************************** NAV *************************************** */
 
 @media (min-width: 1000px) {
+	header {
+		display: flex;
+	}
+
 	.mobile-nav {
 		display: none;
+	}
+
+	.desktop-nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-content {
+		width: 100%;
+		padding: 25px 35px;
 	}
 }
