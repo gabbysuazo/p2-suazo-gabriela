@@ -93,7 +93,7 @@ p {
 }
 
 .hero-about {
-	background-image: url('images/about-hero-test.png');
+	background-image: url('images/about-hero.png');
 	background-size: cover;
 	background-position: 87% 100%;
 }
@@ -219,132 +219,6 @@ header nav ul li {
 /* *********************************** NAV *********************************** */
 /* ******************************************* HEADER ******************************************* */
 
-/* ******************************************* TABBED CONTENT ******************************************* */
-
-.tabbed-section p {
-	padding-top: 15px;
-}
-
-.tablink {
-	background-color: #262E29;
-	color: white;
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	font-size: 17px;
-	width: 25%;
-}
-  
-.tablink:hover {
-	background-color: #262e29c7;
-}
-  
-.tabcontent {
-	color: #f8f8f8;
-	display: none;
-	padding: 50px;
-	text-align: center;
-}
-  
-#temp1940 {background-color: #8DC641;}
-#temp1980 {background-color: #4AAA48;}
-#temp2020 {background-color: #ff555e;}
-#temp2080 {background-color: #FF414B;}
-
-/* ******************************************* TABBED CONTENT ******************************************* */
-
-/* ******************************************* COUNTERS ******************************************* */
-
-.counters-section {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 45px 0;
-}
-
-.counters-section h2 {
-	color: #4AAA48;
-	margin-bottom: 40px;
-}
-
-.counters {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-/* ******************************************* COUNTERS ******************************************* */
-
-/* ******************************************* FAQ ACCORDION ******************************************* */
-
-article {
-	width: 100%;
-	background-color: #f8f8f8;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 45px 0;
-}
-
-article h2 {
-	color: #FF414B;
-	text-align: center;
-	margin-bottom: 40px;
-}
-
-article p {
-	padding: 18px 0;
-}
-
-.faq-accordion-section {
-	width: 85%;
-}
-
-.accordion {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	background-color: #FF414B;
-	color: #f8f8f8;
-	cursor: pointer;
-	padding: 18px;
-	margin: 2px 0;
-	width: 100%;
-	text-align: left;
-	border: none;
-	outline: none;
-	transition: 0.3s;
-}
-  
-.active, .accordion:hover {
-	background-color: #ff414ba1;
-}
-  
-.panel {
-	padding: 0 18px;
-	background-color: #f8f8f8;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
-}
-
-.accordion:after {
-	content: '\02795'; 
-	font-size: 13px;
-	color: #f8f8f8;
-	float: right;
-	margin-left: 5px;
-}
-  
-.active:after {
-	content: "\2796"; 
-}
-
-/* ******************************************* FAQ ACCORDION ******************************************* */
-
 /* ******************************************* FOOTER ******************************************* */
 
 footer {
@@ -457,7 +331,138 @@ footer hr {
 
 /* ******************************************* FOOTER ******************************************* */
 
+/* ******************************************************* HOME ******************************************************* */
+/* ******************************************* TABBED CONTENT ******************************************* */
 
+.tabbed-section p {
+	padding-top: 15px;
+}
+
+.tablink {
+	background-color: #262E29;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 25%;
+}
+  
+.tablink:hover {
+	background-color: #262e29c7;
+}
+  
+.tabcontent {
+	color: #f8f8f8;
+	display: none;
+	padding: 50px;
+	text-align: center;
+}
+  
+#temp1940 {background-color: #8DC641;}
+#temp1980 {background-color: #4AAA48;}
+#temp2020 {background-color: #ff555e;}
+#temp2080 {background-color: #FF414B;}
+
+/* ******************************************* TABBED CONTENT ******************************************* */
+/* ******************************************* COUNTERS ******************************************* */
+
+.counters-section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 45px 0;
+}
+
+.counters-section h2 {
+	color: #4AAA48;
+	margin-bottom: 40px;
+}
+
+.counters {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ******************************************* COUNTERS ******************************************* */
+/* ******************************************* FAQ ACCORDION ******************************************* */
+
+.climate-accordion-section {
+	width: 100%;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 45px 0;
+}
+
+.climate-accordion-section h2 {
+	color: #FF414B;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.climate-accordion-section p {
+	padding: 18px 0;
+}
+
+.faq-accordion-section {
+	width: 85%;
+}
+
+.accordion {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	background-color: #FF414B;
+	color: #f8f8f8;
+	cursor: pointer;
+	padding: 18px;
+	margin: 2px 0;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+}
+  
+.active, .accordion:hover {
+	background-color: #ff414ba1;
+}
+  
+.panel {
+	padding: 0 18px;
+	background-color: #f8f8f8;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+	content: '\02795'; 
+	font-size: 13px;
+	color: #f8f8f8;
+	float: right;
+	margin-left: 5px;
+}
+  
+.active:after {
+	content: "\2796"; 
+}
+
+/* ******************************************* FAQ ACCORDION ******************************************* */
+/* ******************************************************* HOME ******************************************************* */
+
+
+/* ******************************************************* ABOUT ******************************************************* */
+
+
+
+/* ******************************************************* ABOUT ******************************************************* */
 
 
 /* ************************************************* MEDIA QUERIES ************************************************* */
@@ -582,6 +587,7 @@ footer hr {
 /* ******************************************* 1100PX ******************************************* */
 
 @media (min-width: 1100px) {
+	/* ***** HEADER/HERO ***** */
 	.hero-heading-about {
 		height: 60vh;
 		justify-content: left;
@@ -590,6 +596,7 @@ footer hr {
 	.hero-heading-about h1 {
 		padding-left: 12%;
 	}
+	/* ***** HEADER/HERO ***** */
 }
 
 /* ******************************************* 1100PX ******************************************* */
