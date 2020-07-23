@@ -28,15 +28,15 @@ Text - font-family: 'Montserrat', sans-serif;
 
 Headings:
 	Desktop:
-		H1 - 2.2rem
-		H2 - 
+		H1 - 3.8rem
+		H2 - 2.4rem
 		H3 - 
 		H4 - 
 		H5 - 1.6rem
 		H6 - 
-		P - 
+		P - 1.2rem
 	Mobile:
-		H1 - 0.8rem
+		H1 - 1.6rem
 		H2 - 1.5rem
 		H3 - 
 		H4 - 
@@ -46,6 +46,30 @@ Headings:
 
 */
 
+
+/* *************************************** HEADINGS *************************************** */
+
+h1 {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+}
+
+/* *************************************** HEADINGS *************************************** */
 /* *************************************** HERO *************************************** */
 
 .hero {
@@ -65,9 +89,7 @@ Headings:
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-transform: uppercase;
 	text-align: center;
-	font-size: 0.8rem;
 }
 
 /* *************************************** HERO *************************************** */
@@ -107,20 +129,25 @@ header nav ul li {
 	text-decoration: none;
 }
 
+.regular-links a {
+	transition: all .1s;
+}
+
 .regular-links a:hover {
 	color: #f8f8f8;
-	transition: all .2s;
+	transition: all .1s;
 }
 
 .donate-header-button {
 	padding: 15px 18px;
 	margin-right: 0;
 	background-color: #8DC641;
+	transition: all .1s;
 }
 
 .donate-header-button:hover {
 	background-color: #f8f8f8;
-	transition: all .2s;
+	transition: all .1s;
 }
 
 /* ************************* MOBILE ************************* */
@@ -146,10 +173,14 @@ header nav ul li {
 	display: block;
 }
 
+#links a {
+	transition: all .1s;
+}
+
 #links a:hover {
 	background-color: #f8f8f8;
 	color: #262E29;
-	transition: all .2s;
+	transition: all .1s;
 }
 
 .mobile-logo img {
@@ -171,6 +202,65 @@ header nav ul li {
 /* *********************************** NAV *********************************** */
 /* ******************************************* HEADER ******************************************* */
 
+/* ******************************************* TABBED CONTENT ******************************************* */
+
+.tabbed-section p {
+	padding-top: 15px;
+}
+
+.tablink {
+	background-color: #262E29;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 25%;
+}
+  
+.tablink:hover {
+	background-color: #262e29c7;
+}
+  
+.tabcontent {
+	color: #f8f8f8;
+	display: none;
+	padding: 50px;
+	text-align: center;
+}
+  
+#temp1940 {background-color: #8DC641;}
+#temp1980 {background-color: #4AAA48;}
+#temp2020 {background-color: #ff555e;}
+#temp2080 {background-color: #FF414B;}
+
+/* ******************************************* TABBED CONTENT ******************************************* */
+
+/* ******************************************* COUNTERS ******************************************* */
+
+.counters-section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 45px 0;
+}
+
+.counters-section h2 {
+	color: #4AAA48;
+	margin-bottom: 40px;
+}
+
+.counters {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ******************************************* COUNTERS ******************************************* */
 
 /* ******************************************* FAQ ACCORDION ******************************************* */
 
@@ -187,7 +277,10 @@ article h2 {
 	color: #FF414B;
 	text-align: center;
 	margin-bottom: 40px;
-	font-size: 1.5rem;
+}
+
+article p {
+	padding: 18px 0;
 }
 
 .faq-accordion-section {
@@ -195,7 +288,6 @@ article h2 {
 	display
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
@@ -209,36 +301,33 @@ article h2 {
 	border: none;
 	outline: none;
 	transition: 0.3s;
-  }
+}
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+.active, .accordion:hover {
 	background-color: #ff414ba1;
-  }
+}
   
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
+.panel {
 	padding: 0 18px;
 	background-color: #f8f8f8;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
-  }
+}
 
-  .accordion:after {
-	content: '\02795'; /* Unicode character for "plus" sign (+) */
+.accordion:after {
+	content: '\02795'; 
 	font-size: 13px;
 	color: #f8f8f8;
 	float: right;
 	margin-left: 5px;
-  }
+}
   
-  .active:after {
-	content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+.active:after {
+	content: "\2796"; 
+}
 
 /* ******************************************* FAQ ACCORDION ******************************************* */
-
 
 /* ******************************************* FOOTER ******************************************* */
 
@@ -273,11 +362,6 @@ footer section {
 	margin-bottom: 30px;
 }
 
-.footer-info p {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.2rem;
-}
-
 .social-icons {
 	margin-top: 30px;
 }
@@ -286,6 +370,12 @@ footer section {
 	max-width: 30px;
 	filter: invert(100%) sepia(16%) saturate(93%) hue-rotate(235deg) brightness(118%) contrast(95%);
 	padding: 0 8px;
+	transition: all .1s;
+}
+
+.social-icons img:hover {
+	filter: invert(75%) sepia(72%) saturate(433%) hue-rotate(33deg) brightness(88%) contrast(81%);
+	transition: all .1s;
 }
 
 footer hr {
@@ -312,13 +402,16 @@ footer hr {
 
 .donate-footer-button {
 	padding: 15px 0;
+	background-color: #8DC641;
+	transition: all .1s;
+}
+
+.donate-footer-button:hover {
 	background-color: #FF414B;
+	transition: all .1s;
 }
 
 .footer-form h5 {
-	font-size: 1.6rem;
-	text-transform: capitalize;
-	font-weight: bold;
 	margin-bottom: 20px;
 }
 
@@ -331,12 +424,19 @@ footer hr {
 }
 
 .footer-form button {
-	color: #FF414B;
+	color: #8DC641;
 	background-color: #f8f8f8;
 	margin-top: 20px;
 	font-size: 1.4rem;
 	font-weight: bold;
 	padding: 8px 10px;
+	transition: all .1s;
+}
+
+.footer-form button:hover {
+	background-color: #8DC641;
+	color: #f8f8f8;
+	transition: all .1s;
 }
 
 /* ******************************************* FOOTER ******************************************* */
@@ -348,51 +448,64 @@ footer hr {
 /* ******************************************* 400PX ******************************************* */
 
 @media (min-width: 400px) {
-	/* ***** HEADER/HERO ***** */
-	.hero-heading {
-		font-size: 1rem;
+	/* ***** HEADINGS ***** */
+	h1 {
+		font-size: 1.8rem;
 	}
-	/* ***** HEADER/HERO ***** */
-	/* ***** ARTICLE ***** */
-	article h2 {
+
+	h2 {
 		font-size: 1.6rem;
 	}
-	/* ***** ARTICLE ***** */
+
+	h5 {
+		font-size: 1.6rem;
+	}
+	/* ***** HEADINGS ***** */
 }
 
 /* ******************************************* 400PX ******************************************* */
 /* ******************************************* 600PX ******************************************* */
 
 @media (min-width: 600px) {
-	/* ***** HEADER/HERO ***** */
-	.hero-heading {
-		font-size: 1.2rem;
+	/* ***** HEADINGS ***** */
+	h1 {
+		font-size: 2.2rem;
 	}
-	/* ***** HEADER/HERO ***** */
-	/* ***** ARTICLE ***** */
-	article h2 {
+
+	h2 {
 		font-size: 1.8rem;
 	}
-	/* ***** ARTICLE ***** */
+	/* ***** HEADINGS ***** */
 }
 
 /* ******************************************* 600PX ******************************************* */
 /* ******************************************* 800PX ******************************************* */
 
 @media (min-width: 800px) {
-	/* ***** HEADER/HERO ***** */
-	.hero-heading {
-		font-size: 1.6rem;
+	/* ***** HEADINGS ***** */
+	h1 {
+		font-size: 3rem;
 	}
-	/* ***** HEADER/HERO ***** */
-	/* ***** ARTICLE ***** */
-	article h2 {
+
+	h2 {
 		font-size: 2rem;
 	}
-	/* ***** ARTICLE ***** */
+	/* ***** HEADINGS ***** */
 }
 
 /* ******************************************* 800PX ******************************************* */
+/* ******************************************* 910PX ******************************************* */
+
+@media (min-width: 910px) {
+	/* ***** COUNTER SECTION ***** */
+	.counters {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	/* ***** COUNTER SECTION ***** */
+}
+
+/* ******************************************* 910PX ******************************************* */
 /* ******************************************* 1000PX ******************************************* */
 
 @media (min-width: 1000px) {
@@ -416,17 +529,16 @@ footer hr {
 		width: 100%;
 		padding: 25px 35px;
 	}
-
-	.hero-heading {
-		font-size: 1.8rem;
-		height: 65vh;
-	}
 	/* ***** HEADER/HERO ***** */
-	/* ***** ARTICLE ***** */
-	article h2 {
+	/* ***** HEADINGS ***** */
+	h1 {
+		font-size: 3.4rem;
+	}
+
+	h2 {
 		font-size: 2.2rem;
 	}
-	/* ***** ARTICLE ***** */
+	/* ***** HEADINGS ***** */
 	/* ***** FOOTER ***** */
 	.footer-content {
 		display: flex;
@@ -458,16 +570,12 @@ footer hr {
 	header nav ul li {
 		margin: 0 25px;
 	}
-
-	.hero-heading {
-		font-size: 2.2rem;
-	}
 	/* ***** HEADER/HERO ***** */
-	/* ***** ARTICLE ***** */
-	article h2 {
-		font-size: 2.4rem;
+	/* ***** HEADINGS ***** */
+	h1 {
+		font-size: 3.8rem;
 	}
-	/* ***** ARTICLE ***** */
+	/* ***** HEADINGS ***** */
 }
 
 /* ******************************************* 1400PX ******************************************* */
