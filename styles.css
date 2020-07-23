@@ -56,6 +56,7 @@ h1 {
 
 h2 {
 	font-size: 1.7rem;
+	margin-bottom: 40px;
 }
 
 h3 {
@@ -117,6 +118,8 @@ p {
 
 header {
 	width: 100%;
+	max-width: 2000px;
+	margin: auto;
 }
 
 header figure img {
@@ -232,6 +235,8 @@ footer {
 .footer-content {
 	width: 100%;
 	padding: 25px 0;
+	max-width: 2000px;
+	margin: auto;
 }
 
 footer section {
@@ -382,11 +387,12 @@ footer hr {
 	flex-direction: column;
 	align-items: center;
 	padding: 45px 0;
+	max-width: 2000px;
+	margin: auto;
 }
 
 .counters-section h2 {
 	color: #4AAA48;
-	margin-bottom: 40px;
 }
 
 .counters {
@@ -411,7 +417,6 @@ footer hr {
 .climate-accordion-section h2 {
 	color: #FF414B;
 	text-align: center;
-	margin-bottom: 40px;
 }
 
 .climate-accordion-section p {
@@ -420,6 +425,8 @@ footer hr {
 
 .faq-accordion-section {
 	width: 85%;
+	max-width: 1800px;
+	margin: auto;
 }
 
 .accordion {
@@ -473,6 +480,7 @@ footer hr {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 45px 0;
 }
 
 .mission-content {
@@ -480,10 +488,18 @@ footer hr {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 1800px;
+	margin: auto;
+}
+
+.mission-section h2 {
+	margin-bottom: 30px;
+	color: #FF414B;
 }
 
 .mission-section h3 {
 	text-align: center;
+	margin-bottom: 25px;
 }
 
 /* ******************************************* MISSION ******************************************* */
