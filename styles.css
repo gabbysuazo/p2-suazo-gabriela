@@ -20,7 +20,7 @@ White - #f8f8f8
 Black - #262E29
 Dark Green - #4AAA48
 Light Green - #8DC641
-Red - #FF414B
+Dark Red - #FF414B
 
 Fonts:
 Headings - font-family: 'Roboto', sans-serif;
@@ -37,7 +37,7 @@ Headings:
 		P - 
 	Mobile:
 		H1 - 0.8rem
-		H2 - 
+		H2 - 1.5rem
 		H3 - 
 		H4 - 
 		H5 - 
@@ -180,35 +180,46 @@ article {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 45px 0;
+}
+
+article h2 {
+	color: #FF414B;
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 1.5rem;
 }
 
 .faq-accordion-section {
-	width: 90%;
+	width: 85%;
 	display
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 	background-color: #FF414B;
-	color: #444;
+	color: #f8f8f8;
 	cursor: pointer;
 	padding: 18px;
+	margin: 2px 0;
 	width: 100%;
 	text-align: left;
 	border: none;
 	outline: none;
-	transition: 0.4s;
+	transition: 0.3s;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-	background-color: #ccc;
+	background-color: #ff414ba1;
   }
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
 	padding: 0 18px;
-	background-color: white;
+	background-color: #f8f8f8;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
@@ -217,7 +228,7 @@ article {
   .accordion:after {
 	content: '\02795'; /* Unicode character for "plus" sign (+) */
 	font-size: 13px;
-	color: #777;
+	color: #f8f8f8;
 	float: right;
 	margin-left: 5px;
   }
@@ -342,6 +353,11 @@ footer hr {
 		font-size: 1rem;
 	}
 	/* ***** HEADER/HERO ***** */
+	/* ***** ARTICLE ***** */
+	article h2 {
+		font-size: 1.6rem;
+	}
+	/* ***** ARTICLE ***** */
 }
 
 /* ******************************************* 400PX ******************************************* */
@@ -353,6 +369,11 @@ footer hr {
 		font-size: 1.2rem;
 	}
 	/* ***** HEADER/HERO ***** */
+	/* ***** ARTICLE ***** */
+	article h2 {
+		font-size: 1.8rem;
+	}
+	/* ***** ARTICLE ***** */
 }
 
 /* ******************************************* 600PX ******************************************* */
@@ -364,6 +385,11 @@ footer hr {
 		font-size: 1.6rem;
 	}
 	/* ***** HEADER/HERO ***** */
+	/* ***** ARTICLE ***** */
+	article h2 {
+		font-size: 2rem;
+	}
+	/* ***** ARTICLE ***** */
 }
 
 /* ******************************************* 800PX ******************************************* */
@@ -396,6 +422,11 @@ footer hr {
 		height: 65vh;
 	}
 	/* ***** HEADER/HERO ***** */
+	/* ***** ARTICLE ***** */
+	article h2 {
+		font-size: 2.2rem;
+	}
+	/* ***** ARTICLE ***** */
 	/* ***** FOOTER ***** */
 	.footer-content {
 		display: flex;
@@ -432,6 +463,11 @@ footer hr {
 		font-size: 2.2rem;
 	}
 	/* ***** HEADER/HERO ***** */
+	/* ***** ARTICLE ***** */
+	article h2 {
+		font-size: 2.4rem;
+	}
+	/* ***** ARTICLE ***** */
 }
 
 /* ******************************************* 1400PX ******************************************* */
