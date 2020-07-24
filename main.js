@@ -27,27 +27,22 @@ for (i = 0; i < acc.length; i++) {
 
 //Tabbed Content
 function openTemp(cityName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Remove the background color of all tablinks/buttons
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
     }
   
-    // Show the specific tab content
     document.getElementById(cityName).style.display = "block";
   
-    // Add the specific color to the button used to open the tab content
     elmnt.style.backgroundColor = color;
 }
   
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
 
@@ -57,7 +52,6 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var apiResult = JSON.parse(this.responseText);
 
-        //Code Dealing With The API Data Goes Here
         console.log(apiResult[6].annualData[0]);
         temp1940 = document.getElementById('temp1');
         temp1940.innerHTML = apiResult[6].annualData[0]
@@ -72,7 +66,6 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var apiResult = JSON.parse(this.responseText);
 
-        //Code Dealing With The API Data Goes Here
         console.log(apiResult[6].annualData[0]);
         temp1980 = document.getElementById('temp2');
         temp1980.innerHTML = apiResult[6].annualData[0]
@@ -87,7 +80,6 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var apiResult = JSON.parse(this.responseText);
 
-        //Code Dealing With The API Data Goes Here
         console.log(apiResult[12].annualData[0]);
         temp2020 = document.getElementById('temp3');
         temp2020.innerHTML = apiResult[12].annualData[0]
@@ -103,7 +95,6 @@ xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var apiResult = JSON.parse(this.responseText);
 
-        //Code Dealing With The API Data Goes Here
         console.log(apiResult[12].annualData[0]);
         temp2080 = document.getElementById('temp4');
         temp2080.innerHTML = apiResult[12].annualData[0]
@@ -112,3 +103,53 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open('GET', 'http://climatedataapi.worldbank.org/climateweb/rest/v1/country/annualavg/tas/2080/2099/USA', true);
 xmlhttp.send();
+
+
+//Read More Button
+function readMoreButton1() {
+    var dots = document.getElementById("dots1");
+    var moreText = document.getElementById("more1");
+    var btnText = document.getElementById("readMore1");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read More";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read Less";
+      moreText.style.display = "inline";
+    }
+}
+
+function readMoreButton2() {
+    var dots = document.getElementById("dots2");
+    var moreText = document.getElementById("more2");
+    var btnText = document.getElementById("readMore2");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read More";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read Less";
+      moreText.style.display = "inline";
+    }
+}
+
+function readMoreButton3() {
+    var dots = document.getElementById("dots3");
+    var moreText = document.getElementById("more3");
+    var btnText = document.getElementById("readMore3");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read More";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read Less";
+      moreText.style.display = "inline";
+    }
+}
