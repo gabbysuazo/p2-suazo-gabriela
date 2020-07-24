@@ -30,7 +30,7 @@ Headings:
 	Desktop:
 		H1 - 3.8rem
 		H2 - 2.4rem
-		H3 - 
+		H3 - 1.6rem
 		H4 - 
 		H5 - 1.6rem
 		H6 - 
@@ -38,7 +38,7 @@ Headings:
 	Mobile:
 		H1 - 1.6rem
 		H2 - 1.5rem
-		H3 - 
+		H3 - 1.2rem
 		H4 - 
 		H5 - 1.6rem
 		H6 - 
@@ -587,6 +587,60 @@ footer hr {
 
 /* ***************************************************** INITIATIVES ***************************************************** */
 
+.initiative {
+	width: 85%;
+	max-width: 1800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+.initiative-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.initiative-container-middle {
+	background-color: #f8f8f8;
+}
+
+.initiatives-section h2, .initiatives-section h3 {
+	text-align: center;
+}
+
+.initiatives-section h2 {
+	margin: 10px 0 20px 0;
+}
+
+.initiatives-section h3 {
+	margin-bottom: 20px;
+}
+
+.initiatives-section p {
+	margin-bottom: 18px;
+}
+
+.initiatives-section img {
+	width: 100%;
+}
+
+.initiatives-section figure {
+	width: 80%;
+	margin: 25px 0;
+	max-width: 350px;
+}
+
+.initiatives-section button {
+	background-color: #262E29;
+	color: #f8f8f8;
+	padding: 8px;
+	font-size: 1rem;
+}
+
 #more1, #more2, #more3 {
 	display: none;
 }
@@ -747,6 +801,36 @@ footer hr {
 		padding-top: 60px;
 	}
 	/* ***** ABOUT / GET INVOLVED ***** */
+	/* *********** INITIATIVES *********** */
+	.initiative {
+		flex-direction: row-reverse;
+	}
+
+	.initiative-middle {
+		flex-direction: row;
+		text-align: right;
+	}
+
+	.initiatives-section h2, .initiatives-section h3 {
+		text-align: inherit;
+	}
+
+	.left-initiative-text {
+		margin-right: 100px;
+	}
+
+	.right-initiative-text {
+		margin-left: 100px;
+	}
+
+	.left-initiative-text, .right-initiative-text {
+		width: 60%;
+	}
+
+	.initiatives-section figure {
+		width: 40%;
+	}
+	/* *********** INITIATIVES *********** */
 }
 
 /* ******************************************* 1000PX ******************************************* */
