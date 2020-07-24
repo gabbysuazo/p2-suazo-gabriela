@@ -103,18 +103,17 @@ p {
 }
 
 .hero-heading-about {
-	width: 100%;
 	height: 50vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
 }
 
 .hero-initiatives {
 	background-image: url('images/initiatives-hero.jpg');
 	background-size: cover;
 	background-position: center;
+}
+
+.initiatives-heading {
+	color: #f8f8f8;
 }
 
 
@@ -828,4 +827,18 @@ footer hr {
 }
 
 /* ******************************************* 1700PX ******************************************* */
+
+@media (min-width: 1700px) {
+	/* ***** HEADER/HERO ***** */
+	.hero-heading-about {
+		height: 40vh;
+		justify-content: center;
+	}
+
+	.hero-heading-about h1 {
+		padding-left: 0;
+	}
+	/* ***** HEADER/HERO ***** */
+}
+
 /* ************************************************* MEDIA QUERIES ************************************************* */
