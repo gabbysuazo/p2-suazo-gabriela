@@ -519,6 +519,10 @@ footer hr {
 	color: #4AAA48;
 }
 
+.involved-section a {
+	text-decoration: none;
+}
+
 .involved-content {
 	width: 85%;
 	max-width: 1800px;
@@ -539,6 +543,12 @@ footer hr {
 	border-radius: 150px;
 	margin: 20px 0;
 	color: #f8f8f8;
+	transition: all .1s;
+}
+
+.bubble:hover {
+	background-color: #FF414B;
+	transition: all .1s;
 }
 
 .bubble img {
