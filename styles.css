@@ -388,10 +388,18 @@ footer hr {
 	text-align: center;
 }
   
-#temp1940 {background-color: #8DC641;}
-#temp1980 {background-color: #4AAA48;}
-#temp2020 {background-color: #ff555e;}
-#temp2080 {background-color: #FF414B;}
+#temp1940 {
+	background-color: #8DC641;
+}
+#temp1980 {
+	background-color: #4AAA48;
+}
+#temp2020 {
+	background-color: #ff555e;
+}
+#temp2080 {
+	background-color: #FF414B;
+}
 
 /* ******************************************* API / TABBED CONTENT ******************************************* */
 /* ******************************************* COUNTDOWN FOR CHANGE ******************************************* */
@@ -614,6 +622,15 @@ footer hr {
 
 .initiatives-section h2 {
 	margin: 10px 0 20px 0;
+	text-transform: uppercase;
+}
+
+.initiative h2 {
+	color: #4AAA48;
+}
+
+.initiative-middle h2 {
+	color: #FF414B;
 }
 
 .initiatives-section h3 {
@@ -639,6 +656,17 @@ footer hr {
 	color: #f8f8f8;
 	padding: 8px;
 	font-size: 1rem;
+	transition: all .1s;
+}
+
+#readMore1:hover, #readMore3:hover {
+	background-color: #4AAA48;
+	transition: all .1s;
+}
+
+#readMore2:hover {
+	background-color: #FF414B;
+	transition: all .1s;
 }
 
 #more1, #more2, #more3 {
