@@ -516,14 +516,15 @@ footer hr {
 
 .involved-section h2 {
 	margin-bottom: 25px;
+	color: #4AAA48;
 }
 
 .involved-content {
 	width: 85%;
+	max-width: 1800px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 1800px;
 	margin: auto;
 }
 
@@ -534,14 +535,16 @@ footer hr {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	background-color: #8DC641;
+	background-color: #4AAA48;
 	border-radius: 150px;
 	margin: 20px 0;
+	color: #f8f8f8;
 }
 
 .bubble img {
-	max-width: 50px;
-	padding-top: 55px;
+	max-width: 60px;
+	padding-top: 45px;
+	filter: invert(100%) sepia(16%) saturate(93%) hue-rotate(235deg) brightness(118%) contrast(95%);
 }
 
 .bubble h5 {
@@ -611,18 +614,32 @@ footer hr {
 		font-size: 1.6rem;
 	}
 	/* ***** HEADINGS ***** */
+	/* ***** ABOUT / GET INVOLVED ***** */
+	.bubble-content {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.bubble-container {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+	/* ***** ABOUT / GET INVOLVED ***** */
 }
 
 /* ******************************************* 800PX ******************************************* */
 /* ******************************************* 910PX ******************************************* */
 
 @media (min-width: 910px) {
-	/* ***** COUNTER SECTION ***** */
+	/* ***** HOME / COUNTDOWN FOR CHANGE ***** */
 	.counters {
 		flex-direction: row;
 		justify-content: space-around;
 	}
-	/* ***** COUNTER SECTION ***** */
+	/* ***** HOME / COUNTDOWN FOR CHANGE ***** */
 }
 
 /* ******************************************* 910PX ******************************************* */
@@ -684,6 +701,17 @@ footer hr {
 		margin: 0;
 	}
 	/* ***** FOOTER ***** */
+	/* ***** ABOUT / GET INVOLVED ***** */
+	.bubble {
+		width: 350px;
+		height: 350px;
+		border-radius: 175px;
+	}
+
+	.bubble img {
+		padding-top: 60px;
+	}
+	/* ***** ABOUT / GET INVOLVED ***** */
 }
 
 /* ******************************************* 1000PX ******************************************* */
@@ -719,4 +747,15 @@ footer hr {
 }
 
 /* ******************************************* 1400PX ******************************************* */
+/* ******************************************* 1800PX ******************************************* */
+
+@media (min-width: 1800px) {
+	/* ***** ABOUT / GET INVOLVED ***** */
+	.bubble-container {
+		width: 25%;
+	}
+	/* ***** ABOUT / GET INVOLVED ***** */
+}
+
+/* ******************************************* 1800PX ******************************************* */
 /* ************************************************* MEDIA QUERIES ************************************************* */
