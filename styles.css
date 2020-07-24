@@ -294,6 +294,12 @@ footer hr {
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	font-weight: bold;
+	transition: all .1s;
+}
+
+.footer-menu a:hover {
+	color: #8DC641;
+	transition: all .1s;
 }
 
 .footer-menu ul li {
@@ -311,6 +317,10 @@ footer hr {
 .donate-footer-button:hover {
 	background-color: #FF414B;
 	transition: all .1s;
+}
+
+.donate-footer-button a:hover {
+	color: #f8f8f8;
 }
 
 .footer-form h5 {
@@ -431,12 +441,13 @@ footer hr {
 
 .accordion {
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
 	font-weight: bold;
 	background-color: #FF414B;
 	color: #f8f8f8;
 	cursor: pointer;
 	padding: 18px;
-	margin: 2px 0;
+	margin: 3px 0;
 	width: 100%;
 	text-align: left;
 	border: none;
@@ -525,7 +536,7 @@ footer hr {
 
 .involved-content {
 	width: 85%;
-	max-width: 1800px;
+	max-width: 2000px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -754,18 +765,61 @@ footer hr {
 		font-size: 4rem;
 	}
 	/* ***** HEADINGS ***** */
-}
-
-/* ******************************************* 1400PX ******************************************* */
-/* ******************************************* 1800PX ******************************************* */
-
-@media (min-width: 1800px) {
 	/* ***** ABOUT / GET INVOLVED ***** */
+	.involved-content {
+		width: 90%;
+	}
+
 	.bubble-container {
 		width: 25%;
+	}
+
+	.bubble {
+		width: 300px;
+		height: 300px;
+	}
+
+	.bubble img {
+		padding-top: 40px;
+	}
+
+	.involved-section p {
+		font-size: 1rem;
+	}
+
+	.involved-section h5 {
+		font-size: 1.5rem;
 	}
 	/* ***** ABOUT / GET INVOLVED ***** */
 }
 
-/* ******************************************* 1800PX ******************************************* */
+/* ******************************************* 1400PX ******************************************* */
+/* ******************************************* 1700PX ******************************************* */
+
+@media (min-width: 1700px) {
+	/* ***** ABOUT / GET INVOLVED ***** */
+	.involved-content {
+		width: 85%;
+	}
+
+	.bubble {
+		width: 350px;
+		height: 350px;
+	}
+
+	.bubble img {
+		padding-top: 60px;
+	}
+
+	.involved-section p {
+		font-size: 1.2rem;
+	}
+
+	.involved-section h5 {
+		font-size: 1.6rem;
+	}
+	/* ***** ABOUT / GET INVOLVED ***** */
+}
+
+/* ******************************************* 1700PX ******************************************* */
 /* ************************************************* MEDIA QUERIES ************************************************* */
